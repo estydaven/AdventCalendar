@@ -38,3 +38,163 @@ a {
 		url('../fonts/aquarelle.woff') format('woff');
 }
 /* Fonts end */
+
+body {
+	min-width: 480px;
+	min-height: 100vh;
+	font-size: 16px;
+	color: #fff;
+	background: url(../images/bg1.jpg) center/cover, rgba(0, 0, 0, 0.5);
+	background-blend-mode: multiply;
+	transition: background-image 1s ease-in-out;
+}
+
+/* Snow styles start */
+.snow {
+	bottom: 0;
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+}
+.snow__inner {
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50000000;
+    display: block;
+    font-size: 40px;
+    overflow: hidden;
+    pointer-events: none;
+}
+.snowflake {
+	position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+.snowflake__wrap {
+	align-self: center;
+}
+
+/* Snowflakes animations */
+.snowflake:nth-child(1) {animation: snowflake-1 linear infinite;animation-duration: 25.3s;animation-delay: -9.1s;}
+.snowflake:nth-child(2) {animation: snowflake-2 linear infinite;animation-duration: 29.9s;animation-delay: -8.9s;}
+.snowflake:nth-child(3) {animation: snowflake-3 linear infinite;animation-duration: 27.7s;animation-delay: -11.9s;}
+.snowflake:nth-child(4) {animation: snowflake-4 linear infinite;animation-duration: 22.1s;animation-delay: -11.4s;}
+.snowflake:nth-child(5) {animation: snowflake-5 linear infinite;animation-duration: 30.4s;animation-delay: -12.3s;}
+.snowflake:nth-child(6) {animation: snowflake-6 linear infinite;animation-duration: 25.4s;animation-delay: -10.9s;}
+.snowflake:nth-child(7) {animation: snowflake-7 linear infinite;animation-duration: 28.6s;animation-delay: -11.2s;}
+.snowflake:nth-child(8) {animation: snowflake-8 linear infinite;animation-duration: 19.9s;animation-delay: -9.9s;}
+.snowflake:nth-child(9) {animation: snowflake-9 linear infinite;animation-duration: 29.4s;animation-delay: -10.1s;}
+.snowflake:nth-child(10) {animation: snowflake-10 linear infinite;animation-duration: 31.2s;animation-delay: -11.8s;}
+.snowflake:nth-child(11) {animation: snowflake-11 linear infinite;animation-duration: 33.3s;animation-delay: -12.1s;}
+.snowflake:nth-child(12) {animation: snowflake-12 linear infinite;animation-duration: 26.5s;animation-delay: -8.3s;}
+.snowflake:nth-child(13) {animation: snowflake-13 linear infinite;animation-duration: 25.6s;animation-delay: -10.3s;}
+.snowflake:nth-child(14) {animation: snowflake-14 linear infinite;animation-duration: 18.9s;animation-delay: -11.5s;}
+.snowflake:nth-child(15) {animation: snowflake-15 linear infinite;animation-duration: 20.1s;animation-delay: -8.7s;}
+.snowflake:nth-child(16) {animation: snowflake-16 linear infinite;animation-duration: 30.2s;animation-delay: -9.4s;}
+.snowflake:nth-child(17) {animation: snowflake-17 linear infinite;animation-duration: 31.3s;animation-delay: -6.2s;}
+.snowflake:nth-child(18) {animation: snowflake-18 linear infinite;animation-duration: 21.4s;animation-delay: -9.2s;}
+.snowflake:nth-child(19) {animation: snowflake-19 linear infinite;animation-duration: 26.8s;animation-delay: -13.1s;}
+.snowflake:nth-child(20) {animation: snowflake-20 linear infinite;animation-duration: 29.1s;animation-delay: -11.1s;}
+.snowflake:nth-child(21) {animation: snowflake-21 linear infinite;animation-duration: 18.5s;animation-delay: -10.7s;}
+.snowflake:nth-child(22) {animation: snowflake-22 linear infinite;animation-duration: 19.6s;animation-delay: -6.9s;}
+.snowflake:nth-child(23) {animation: snowflake-23 linear infinite;animation-duration: 22.8s;animation-delay: -9.6s;}
+.snowflake:nth-child(24) {animation: snowflake-24 linear infinite;animation-duration: 24.4s;animation-delay: -7.9s;}
+.snowflake:nth-child(25) {animation: snowflake-25 linear infinite;animation-duration: 30.8s;animation-delay: -10.4s;}
+.snowflake:nth-child(26) {animation: snowflake-26 linear infinite;animation-duration: 31.5s;animation-delay: -12.2s;}
+.snowflake:nth-child(27) {animation: snowflake-27 linear infinite;animation-duration: 32.3s;animation-delay: -9.3s;}
+.snowflake:nth-child(28) {animation: snowflake-28 linear infinite;animation-duration: 33.2s;animation-delay: -6.7s;}
+.snowflake:nth-child(29) {animation: snowflake-29 linear infinite;animation-duration: 24.3s;animation-delay: -8.5s;}
+.snowflake:nth-child(30) {animation: snowflake-30 linear infinite;animation-duration: 23.4s;animation-delay: -6.8s;}
+.snowflake:nth-child(31) {animation: snowflake-31 linear infinite;animation-duration: 28.5s;animation-delay: -6.6s;}
+.snowflake:nth-child(32) {animation: snowflake-32 linear infinite;animation-duration: 19.7s;animation-delay: -8.8s;}
+.snowflake:nth-child(33) {animation: snowflake-33 linear infinite;animation-duration: 22.2s;animation-delay: -6.5s;}
+.snowflake:nth-child(34) {animation: snowflake-34 linear infinite;animation-duration: 31.1s;animation-delay: -9.5s;}
+.snowflake:nth-child(35) {animation: snowflake-35 linear infinite;animation-duration: 23.5s;animation-delay: -7.7s;}
+.snowflake:nth-child(36) {animation: snowflake-36 linear infinite;animation-duration: 20.8s;animation-delay: -7.4s;}
+.snowflake:nth-child(37) {animation: snowflake-37 linear infinite;animation-duration: 18.8s;animation-delay: -12.8s;}
+.snowflake:nth-child(38) {animation: snowflake-38 linear infinite;animation-duration: 33.4s;animation-delay: -13.2s;}
+.snowflake:nth-child(39) {animation: snowflake-39 linear infinite;animation-duration: 27.2s;animation-delay: -12.6s;}
+.snowflake:nth-child(40) {animation: snowflake-40 linear infinite;animation-duration: 27.9s;animation-delay: -6.3s;}
+.snowflake:nth-child(41) {animation: snowflake-41 linear infinite;animation-duration: 16.8s;animation-delay: -13.4s;}
+.snowflake:nth-child(42) {animation: snowflake-42 linear infinite;animation-duration: 27.6s;animation-delay: -12.4s;}
+.snowflake:nth-child(43) {animation: snowflake-43 linear infinite;animation-duration: 29.3s;animation-delay: -7.6s;}
+.snowflake:nth-child(44) {animation: snowflake-44 linear infinite;animation-duration: 23.9s;animation-delay: -6.4s;}
+.snowflake:nth-child(45) {animation: snowflake-45 linear infinite;animation-duration: 17.5s;animation-delay: -8.2s;}
+.snowflake:nth-child(46) {animation: snowflake-46 linear infinite;animation-duration: 28.4s;animation-delay: -13.3s;}
+.snowflake:nth-child(47) {animation: snowflake-47 linear infinite;animation-duration: 22.9s;animation-delay: -10.6s;}
+.snowflake:nth-child(48) {animation: snowflake-48 linear infinite;animation-duration: 33.7s;animation-delay: -6.1s;}
+.snowflake:nth-child(49) {animation: snowflake-49 linear infinite;animation-duration: 32.4s;animation-delay: -10.2s;}
+.snowflake:nth-child(50) {animation: snowflake-50 linear infinite;animation-duration: 18.2s;animation-delay: -10.8s;}
+@keyframes snowflake-1 {0%{left:60%;top:calc(0% - 100px);transform:scale(.653)} to{left:86.2%;top:calc(100% + 100px);transform:scale(.653)}}
+@keyframes snowflake-2 {0%{left:89%;top:calc(0% - 100px);transform:scale(.969)} to{left:95.7%;top:calc(100% + 100px);transform:scale(.969)}}
+@keyframes snowflake-3 {0%{left:50%;top:calc(0% - 100px);transform:scale(.844)} to{left:55.2%;top:calc(100% + 100px);transform:scale(.844)}}
+@keyframes snowflake-4 {0%{left:48%;top:calc(0% - 100px);transform:scale(.764)} to{left:33.2%;top:calc(100% + 100px);transform:scale(.764)}}
+@keyframes snowflake-5 {0%{left:15%;top:calc(0% - 100px);transform:scale(1.232)} to{left:2.2%;top:calc(100% + 100px);transform:scale(1.232)}}
+@keyframes snowflake-6 {0%{left:2%;top:calc(0% - 100px);transform:scale(1.246)} to{left:16.2%;top:calc(100% + 100px);transform:scale(1.246)}}
+@keyframes snowflake-7 {0%{left:35%;top:calc(0% - 100px);transform:scale(.689)} to{left:31.2%;top:calc(100% + 100px);transform:scale(.689)}}
+@keyframes snowflake-8 {0%{left:18%;top:calc(0% - 100px);transform:scale(1.342)} to{left:22.2%;top:calc(100% + 100px);transform:scale(1.342)}}
+@keyframes snowflake-9 {0%{left:7%;top:calc(0% - 100px);transform:scale(.903)} to{left:4.2%;top:calc(100% + 100px);transform:scale(.903)}}
+@keyframes snowflake-10 {0%{left:78%;top:calc(0% - 100px);transform:scale(.818)} to{left:70.2%;top:calc(100% + 100px);transform:scale(.818)}}
+@keyframes snowflake-11 {0%{left:95%;top:calc(0% - 100px);transform:scale(.714)} to{left:91.2%;top:calc(100% + 100px);transform:scale(.714)}}
+@keyframes snowflake-12 {0%{left:90%;top:calc(0% - 100px);transform:scale(.789)} to{left:94.2%;top:calc(100% + 100px);transform:scale(.789)}}
+@keyframes snowflake-13 {0%{left:83%;top:calc(0% - 100px);transform:scale(.945)} to{left:81.2%;top:calc(100% + 100px);transform:scale(.945)}}
+@keyframes snowflake-14 {0%{left:40%;top:calc(0% - 100px);transform:scale(1.234)} to{left:42.2%;top:calc(100% + 100px);transform:scale(1.234)}}
+@keyframes snowflake-15 {0%{left:13%;top:calc(0% - 100px);transform:scale(.939)} to{left:17.2%;top:calc(100% + 100px);transform:scale(.939)}}
+@keyframes snowflake-16 {0%{left:1%;top:calc(0% - 100px);transform:scale(.888)} to{left:11.2%;top:calc(100% + 100px);transform:scale(.888)}}
+@keyframes snowflake-17 {0%{left:0%;top:calc(0% - 100px);transform:scale(1.304)} to{left:10.2%;top:calc(100% + 100px);transform:scale(1.304)}}
+@keyframes snowflake-18 {0%{left:22%;top:calc(0% - 100px);transform:scale(.700)} to{left:34.2%;top:calc(100% + 100px);transform:scale(.700)}}
+@keyframes snowflake-19 {0%{left:24%;top:calc(0% - 100px);transform:scale(.834)} to{left:23.2%;top:calc(100% + 100px);transform:scale(.834)}}
+@keyframes snowflake-20 {0%{left:28%;top:calc(0% - 100px);transform:scale(.900)} to{left:27.2%;top:calc(100% + 100px);transform:scale(.900)}}
+@keyframes snowflake-21 {0%{left:56%;top:calc(0% - 100px);transform:scale(.917)} to{left:58.2%;top:calc(100% + 100px);transform:scale(.917)}}
+@keyframes snowflake-22 {0%{left:57%;top:calc(0% - 100px);transform:scale(1.111)} to{left:60.2%;top:calc(100% + 100px);transform:scale(1.111)}}
+@keyframes snowflake-23 {0%{left:61%;top:calc(0% - 100px);transform:scale(.679)} to{left:54.2%;top:calc(100% + 100px);transform:scale(.679)}}
+@keyframes snowflake-24 {0%{left:75%;top:calc(0% - 100px);transform:scale(.610)} to{left:77.2%;top:calc(100% + 100px);transform:scale(.610)}}
+@keyframes snowflake-25 {0%{left:25%;top:calc(0% - 100px);transform:scale(.785)} to{left:29.2%;top:calc(100% + 100px);transform:scale(.785)}}
+@keyframes snowflake-26 {0%{left:11%;top:calc(0% - 100px);transform:scale(.822)} to{left:3.2%;top:calc(100% + 100px);transform:scale(.822)}}
+@keyframes snowflake-27 {0%{left:70%;top:calc(0% - 100px);transform:scale(.878)} to{left:73.2%;top:calc(100% + 100px);transform:scale(.878)}}
+@keyframes snowflake-28 {0%{left:64%;top:calc(0% - 100px);transform:scale(1.156)} to{left:69.2%;top:calc(100% + 100px);transform:scale(1.156)}}
+@keyframes snowflake-29 {0%{left:33%;top:calc(0% - 100px);transform:scale(.919)} to{left:37.2%;top:calc(100% + 100px);transform:scale(.919)}}
+@keyframes snowflake-30 {0%{left:31%;top:calc(0% - 100px);transform:scale(.777)} to{left:33.7%;top:calc(100% + 100px);transform:scale(.777)}}
+@keyframes snowflake-31 {0%{left:44%;top:calc(0% - 100px);transform:scale(.784)} to{left:46.2%;top:calc(100% + 100px);transform:scale(.784)}}
+@keyframes snowflake-32 {0%{left:38%;top:calc(0% - 100px);transform:scale(1.300)} to{left:40.2%;top:calc(100% + 100px);transform:scale(1.300)}}
+@keyframes snowflake-33 {0%{left:91%;top:calc(0% - 100px);transform:scale(1.320)} to{left:95.2%;top:calc(100% + 100px);transform:scale(1.320)}}
+@keyframes snowflake-34 {0%{left:88%;top:calc(0% - 100px);transform:scale(.690)} to{left:90.2%;top:calc(100% + 100px);transform:scale(.690)}}
+@keyframes snowflake-35 {0%{left:74%;top:calc(0% - 100px);transform:scale(.720)} to{left:66.2%;top:calc(100% + 100px);transform:scale(.720)}}
+@keyframes snowflake-36 {0%{left:42%;top:calc(0% - 100px);transform:scale(.999)} to{left:41.2%;top:calc(100% + 100px);transform:scale(.999)}}
+@keyframes snowflake-37 {0%{left:44%;top:calc(0% - 100px);transform:scale(.667)} to{left:47.2%;top:calc(100% + 100px);transform:scale(.667)}}
+@keyframes snowflake-38 {0%{left:92%;top:calc(0% - 100px);transform:scale(.911)} to{left:88.2%;top:calc(100% + 100px);transform:scale(.911)}}
+@keyframes snowflake-39 {0%{left:84%;top:calc(0% - 100px);transform:scale(.788)} to{left:80.2%;top:calc(100% + 100px);transform:scale(.788)}}
+@keyframes snowflake-40 {0%{left:5%;top:calc(0% - 100px);transform:scale(1.222)} to{left:16.7%;top:calc(100% + 100px);transform:scale(1.222)}}
+@keyframes snowflake-41 {0%{left:14%;top:calc(0% - 100px);transform:scale(1.011)} to{left:18.2%;top:calc(100% + 100px);transform:scale(1.011)}}
+@keyframes snowflake-42 {0%{left:24%;top:calc(0% - 100px);transform:scale(.866)} to{left:17.9%;top:calc(100% + 100px);transform:scale(.866)}}
+@keyframes snowflake-43 {0%{left:66%;top:calc(0% - 100px);transform:scale(.733)} to{left:58.8%;top:calc(100% + 100px);transform:scale(.733)}}
+@keyframes snowflake-44 {0%{left:71%;top:calc(0% - 100px);transform:scale(1.212)} to{left:79.2%;top:calc(100% + 100px);transform:scale(1.212)}}
+@keyframes snowflake-45 {0%{left:72%;top:calc(0% - 100px);transform:scale(.962)} to{left:75.2%;top:calc(100% + 100px);transform:scale(.962)}}
+@keyframes snowflake-46 {0%{left:37%;top:calc(0% - 100px);transform:scale(.787)} to{left:38.2%;top:calc(100% + 100px);transform:scale(.787)}}
+@keyframes snowflake-47 {0%{left:58%;top:calc(0% - 100px);transform:scale(.878)} to{left:57.2%;top:calc(100% + 100px);transform:scale(.878)}}
+@keyframes snowflake-48 {0%{left:54%;top:calc(0% - 100px);transform:scale(.802)} to{left:55.8%;top:calc(100% + 100px);transform:scale(.802)}}
+@keyframes snowflake-49 {0%{left:19%;top:calc(0% - 100px);transform:scale(.906)} to{left:20.2%;top:calc(100% + 100px);transform:scale(.906)}}
+@keyframes snowflake-50 {0%{left:81%;top:calc(0% - 100px);transform:scale(.929)} to{left:78.2%;top:calc(100% + 100px);transform:scale(.929)}}
+/* Snow styles end */
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.main-header {
+	text-align: center;
+	font-family: 'SnowCapCyr';
+	font-size: 75px;
+	padding: 30px 0;
+}
