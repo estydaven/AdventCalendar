@@ -1,0 +1,40 @@
+/* CSS Reset start */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul{
+    list-style: none;
+}
+button {
+	background-color: transparent;
+	border: none;
+}
+a {
+	text-decoration: none;
+}
+/* CSS Reset end */
+
+/* Fonts start */
+@font-face {
+	font-family: 'Pudelinka';
+    font-display: swap;
+	src: url('../fonts/pudelinka.woff2') format('woff2'),
+		url('../fonts/pudelinka.woff') format('woff');
+}
+@font-face {
+	font-family: 'SnowCapCyr';
+    font-display: swap;
+	src: url('../fonts/snowcapcyr.woff2') format('woff2'),
+		url('../fonts/snowcapcyr.woff') format('woff');
+}
+@font-face {
+	font-family: 'Aquarelle';
+    font-display: swap;
+	src: url('../fonts/aquarelle.woff2') format('woff2'),
+		url('../fonts/aquarelle.woff') format('woff');
+}
+/* Fonts end */
