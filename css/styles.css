@@ -16,6 +16,10 @@ button {
 a {
 	text-decoration: none;
 }
+img {
+    max-width: 100%;
+    display: block;
+}
 /* CSS Reset end */
 
 /* Fonts start */
@@ -39,6 +43,7 @@ a {
 }
 /* Fonts end */
 
+/* Common styles start */
 body {
 	min-width: 480px;
 	min-height: 100vh;
@@ -48,6 +53,18 @@ body {
 	background-blend-mode: multiply;
 	transition: background-image 1s ease-in-out;
 }
+.wrapper {
+	max-width: 1262px;
+	margin: 0 auto;
+}
+.main-header {
+	text-align: center;
+	font-family: 'SnowCapCyr';
+	font-size: 75px;
+	padding: 30px 0;
+    margin-bottom: 100px;
+}
+/* Common styles end */
 
 /* Snow styles start */
 .snow {
@@ -188,13 +205,26 @@ body {
 @keyframes snowflake-49 {0%{left:19%;top:calc(0% - 100px);transform:scale(.906)} to{left:20.2%;top:calc(100% + 100px);transform:scale(.906)}}
 @keyframes snowflake-50 {0%{left:81%;top:calc(0% - 100px);transform:scale(.929)} to{left:78.2%;top:calc(100% + 100px);transform:scale(.929)}}
 /* Snow styles end */
-.wrapper {
-	max-width: 1200px;
-	margin: 0 auto;
+
+/* Calentar styles start */
+.calendar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
 }
-.main-header {
-	text-align: center;
-	font-family: 'SnowCapCyr';
-	font-size: 75px;
-	padding: 30px 0;
+.calendar__item {
+    width: 315px;
+    overflow: hidden;
+    transition: all 1.2s ease-in-out;
+    cursor: pointer;
 }
+.calendar__item:hover {
+    transform: rotateY(360deg);    
+}
+.calendar__item.used {
+    filter: blur(5px);
+}
+/* Calentar styles end */
