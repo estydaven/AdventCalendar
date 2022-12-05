@@ -54,6 +54,7 @@ body {
 	background: url(../images/bg1.jpg) center/cover, rgba(0, 0, 0, 0.5);
 	background-blend-mode: multiply;
 	transition: background-image 1s ease-in-out;
+    overflow-x: hidden;
 }
 .wrapper {
 	max-width: 1262px;
@@ -208,6 +209,141 @@ body {
 @keyframes snowflake-50 {0%{left:81%;top:calc(0% - 100px);transform:scale(.929)} to{left:78.2%;top:calc(100% + 100px);transform:scale(.929)}}
 /* Snow styles end */
 
+
+/* Lights styles start */
+.lights {
+    position: absolute;
+}
+.lights_one {
+    top: 0;
+    right: -150px;
+}
+.lights_two {
+    top: 500px;
+    left: -175px;
+    transform: rotate(-163deg);
+}
+.lights__line_one {
+    width: 300px;
+    height: 300px;
+    border-radius: 55% 37%;
+    border: 2px solid #292929;
+}
+.lights__line_two {
+    width: 300px;
+    height: 300px;
+    border-radius: 132% 37%;
+    border: 2px solid #292929;
+    transform: rotate(127deg);
+}
+.light {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 72% 37%;
+}
+.light_zero {
+    top: -9px;
+    left: 18px;
+    transform: rotate(77deg);
+}
+.light_one {
+    top: 38px;
+    left: -23px;
+    transform: rotate(51deg);
+}
+.light_two {
+    top: 102px;
+    left: -49px;
+    transform: rotate(50deg);
+}
+.light_three {
+    top: 159px;
+    left: -52px;
+    transform: rotate(46deg);
+}
+.light_four {
+    top: 222px;
+    left: -40px;
+    transform: rotate(30deg);
+}
+.light_five {
+    top: 269px;
+    left: -4px;
+    transform: rotate(12deg);
+}
+.light_six {
+    top: 298px;
+    left: 49px;
+    transform: rotate(-15deg);
+}
+.light_seven {
+    top: 303px;
+    left: 113px;
+    transform: rotate(-48deg);
+}
+.light_eight {
+    top: -35px;
+    left: 28px;
+    transform: rotate(88deg);
+}
+.light_nine {
+    top: 22px;
+    left: 0;
+    transform: rotate(51deg);
+}
+.light_twelve {
+    top: 84px;
+    left: -20px;
+    transform: rotate(50deg);
+}
+.light_thirteen {
+    top: 146px;
+    left: -18px;
+    transform: rotate(41deg);
+}
+.light_fourteen {
+    top: 207px;
+    left: -2px;
+    transform: rotate(30deg);
+}
+.light_fiveteen {
+    top: 267px;
+    left: 32px;
+    transform: rotate(12deg);
+}
+.light_sixteen {
+    top: 316px;
+    left: 82px;
+    transform: rotate(-9deg);
+}
+.light_seventeen {
+    top: 336px;
+    left: 146px;
+    transform: rotate(-34deg);
+}
+.light_green {
+    background-color: rgba(25,196,51,1);
+    box-shadow: 0px 0px 50px 10px rgba(25,196,51,1);
+}
+.light_yellow {
+    background-color: rgba(230,227,30,1);
+    box-shadow: 0px 0px 50px 10px rgba(230,227,30,1);
+}
+.light_blue {
+    background-color: rgba(28,95,230,1);
+    box-shadow: 0px 0px 50px 10px rgba(28,95,230,1);
+}
+.light_orange {
+    background-color: rgba(231,166,26,1);
+    box-shadow: 0px 0px 50px 10px rgba(231,166,26,1);
+}
+.light_red {
+    background-color: rgba(230,62,32,1);
+    box-shadow: 0px 0px 50px 10px rgba(230,62,32,1);
+}
+/* Lights styles end */
+
 /* Parallax styles start */
 .scene {
     position: absolute;
@@ -236,16 +372,16 @@ body {
 .scene__image_three {
     width: 160px;
     left: 90px;
-    top: 1000px;
+    top: 950px;
 }
 .scene__image_four {
     width: 200px;
-    top: 1100px;
+    top: 1050px;
     right: 70px;
 }
 .scene__image_five {
     width: 140px;
-    top: 1800px;
+    top: 1750px;
     left: 10px;
 }
 .scene__image_six {
