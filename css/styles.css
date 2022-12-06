@@ -223,6 +223,15 @@ body {
     left: -175px;
     transform: rotate(-163deg);
 }
+.lights_three {
+    top: 1280px;
+    right: -200px;
+}
+.lights_four {
+    top: 1700px;
+    left: -175px;
+    transform: rotate(-163deg);
+}
 .lights__line_one {
     width: 300px;
     height: 300px;
@@ -235,6 +244,13 @@ body {
     border-radius: 132% 37%;
     border: 2px solid #292929;
     transform: rotate(127deg);
+}
+.lights__line_three {
+    width: 384px;
+    height: 250px;
+    border-radius: 102% 37%;
+    border: 2px solid #292929;
+    transform: rotate(111deg);
 }
 .light {
     position: absolute;
@@ -321,6 +337,46 @@ body {
     top: 336px;
     left: 146px;
     transform: rotate(-34deg);
+}
+.light_eightteen {
+    top: -64px;
+    left: 68px;
+    transform: rotate(77deg);
+}
+.light_nineteen {
+    top: 5px;
+    left: 44px;
+    transform: rotate(63deg);
+}
+.light_twenty {
+    top: 76px;
+    left: 30px;
+    transform: rotate(50deg);
+}
+.light_twentyone {
+    top: 144px;
+    left: 31px;
+    transform: rotate(46deg);
+}
+.light_twentytwo {
+    top: 207px;
+    left: 43px;
+    transform: rotate(30deg);
+}
+.light_twentythree {
+    top: 266px;
+    left: 68px;
+    transform: rotate(12deg);
+}
+.light_twentyfour {
+    top: 317px;
+    left: 121px;
+    transform: rotate(-15deg);
+}
+.light_twentyfive {
+    top: -116px;
+    left: 118px;
+    transform: rotate(93deg);
 }
 .light_green {
     background-color: rgba(25,196,51,1);
