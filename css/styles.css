@@ -467,3 +467,93 @@ body {
     filter: grayscale(.8);
 }
 /* Calentar styles end */
+
+/* Popup styles start */
+.popup {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: calc(100vh + 10%);
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup__wrapper {
+    width: 600px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.popup__number {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(12, 22, 72, 0.8);
+    font-family: 'Pudelinka';
+    font-size: 65px;
+    border-radius: 50%;
+    background-color: #FFF55A;
+    box-shadow: 0px 4px 40px #FFD15A, inset 0px 0px 8px #F4C82C;
+}
+.popup__number::before {
+    content: '';
+    position: absolute;
+    top: -19px;
+    left: 0;
+    width: 93px;
+    height: 63px;
+    display: block;
+    background-image: url(../images/snow1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.popup__body {
+    position: relative;
+    width: 100%;
+    background-color: #EFF3FE;
+    border-radius: 21px;
+    font-family: 'Aquarelle';
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+    color: #3B425B;
+    padding: 30px;
+}
+.popup__body::before {
+    content: '';
+    position: absolute;
+    top: -31px;
+    left: -4px;
+    width: 607px;
+    height: 78px;
+    display: block;
+    background-image: url(../images/snow2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.popup__close {
+    width: 35px;
+    height: 35px;
+    background-image: url(../images/close.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -17px;
+    z-index: 1;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.popup__close:hover {
+    transform: rotate(90deg);
+}
+.hidden {
+    display: none;
+}
+/* Popup styles end */
