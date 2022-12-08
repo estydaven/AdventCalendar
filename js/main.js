@@ -72,7 +72,7 @@ function closePopup() {
 popupCloseBtn.addEventListener('click', closePopup);
 
 calendarList.forEach(item => {
-	const itemNumber = item.dataset.item;
+	const itemNumber = item.dataset.number;
 	
 	if ((currentDate.getDate() - 8) == itemNumber || (currentDate.getDate() - 8) > itemNumber) {
 		item.classList.remove('used');
@@ -83,7 +83,11 @@ calendarList.forEach(item => {
 
 calendar.addEventListener('click', (event) => {
 	popup.classList.remove('hidden'); 
-	const elemNumber = Number(event.target.dataset.number);	
+	const elemNumber = Number(event.target.dataset.number);
+
+	if (event.target.classList.contains('used')) {
+		closePopup();
+	}
 	for (let i = 0; i < messages.length; i++) {
 		if (elemNumber == i) {
 			popupText.innerText = messages[i - 1];
