@@ -98,3 +98,21 @@ calendar.addEventListener('click', (event) => {
 		}
 	}
 });
+
+// Background script
+
+function getRandomNum(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+let randomNum = getRandomNum(1, 9);
+
+function setBg() {
+    const bgNum = String(randomNum);
+    const body = document.body;
+	body.style.backgroundImage = `url(../images/backgrounds/bg${bgNum}.jpg)`;
+}
+
+setBg();
