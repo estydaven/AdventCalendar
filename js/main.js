@@ -112,7 +112,7 @@ let randomNum = getRandomNum(1, 9);
 function setBg() {
     const bgNum = String(randomNum);
     const body = document.body;
-	body.style.backgroundImage = `url(../images/backgrounds/bg${bgNum}.jpg)`;
+	body.style.backgroundImage = `url(images/backgrounds/bg${bgNum}.jpg)`;
 }
 
 setBg();
