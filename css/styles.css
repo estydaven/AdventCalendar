@@ -485,7 +485,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: calc(100vh + 10%);
+    height: 100vh;
     background: rgba(0, 0, 0, .6);
     display: flex;
     justify-content: center;
@@ -531,11 +531,11 @@ body {
     background-color: #EFF3FE;
     border-radius: 21px;
     font-family: 'PenguinAttackCyrillic';
-    font-size: 28px;
-    line-height: 43px;
+    font-size: 23px;
+    line-height: 28px;
     text-align: center;
     color: #3B425B;
-    padding: 30px;
+    padding: 30px 15px 0 15px;
 }
 .popup__body::before {
     content: '';
@@ -562,6 +562,43 @@ body {
 }
 .popup__close:hover {
     transform: rotate(90deg);
+}
+.popup__link {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    justify-content: center;
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    background-color: #05f;
+    color: #fff;
+}
+.popup__link:hover {
+    transform: scale(0.95);
+}
+.popup__link:after {
+    background-image: url(../images/frost.png);
+    background-position: 38% 50%;
+    background-repeat: no-repeat;
+    background-size: 140%;
+    content: "";
+    height: 100%;
+    left: 0;
+    mix-blend-mode: screen;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    transition: opacity 1s ease;
+}
+.popup__text {
+    margin-bottom: 15px;
 }
 .hidden {
     display: none;
