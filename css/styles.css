@@ -64,14 +64,13 @@ body {
 .wrapper {
 	max-width: 1000px;
 	margin: 0 auto;
-    max-height: 100vh;
+    /* max-height: 100vh; */
 }
 .main-header {
 	text-align: center;
 	font-family: 'SnowCapCyr';
-	font-size: 75px;
-	padding: 30px 0;
-    margin-bottom: 20px;
+	font-size: 70px;
+	padding: 10px 0;
 }
 /* Common styles end */
 
@@ -226,7 +225,7 @@ body {
     right: -150px;
 }
 .lights_two {
-    top: 500px;
+    top: 350px;
     left: -175px;
     transform: rotate(-163deg);
 }
