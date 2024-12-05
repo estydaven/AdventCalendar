@@ -55,11 +55,11 @@ body {
 	min-height: 100vh;
 	font-size: 16px;
 	color: #fff;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     background: center/cover, rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
     transition: background-image 1s ease-in-out;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .wrapper {
 	max-width: 1000px;
@@ -214,200 +214,80 @@ body {
 @keyframes snowflake-50 {0%{left:81%;top:calc(0% - 100px);transform:scale(.929)} to{left:78.2%;top:calc(100% + 100px);transform:scale(.929)}}
 /* Snow styles end */
 
+/* Birds styles start */
+.bird {
+    width: 150px;
+    position: absolute;
+}
+.bird_first {
+    right: 0;
+    top: 20px;
+}
+.bird_second {
+    left: -84px;
+    bottom: -92px;
+    transition: all .3s ease-in-out;
+}
+.bird_second.active {
+    left: 0;
+    bottom: 0;
+}
+.bird_third {
+    left: 0;
+    top: 20px;
+}
+.bird_fourth {
+    right: 10px;
+    bottom: 10px;
+}
+.bird-thought {
+    position: absolute;
+    right: -80px;
+    bottom: 95px;
+    width: 111px;
+}
+.bird-text {
+    position: absolute;
+    right: -53px;
+    bottom: 139px;
+    font-family: 'SnowCapCyr';
+    font-size: 28px;
+}
+/* Birds styles end */
 
-/* Lights styles start */
-.lights {
+/* Audio styles start */
+.audio {
     position: absolute;
-    z-index: -1;
+    bottom: 100px;
+    right: 123px;
 }
-.lights_one {
-    top: 0;
-    right: -150px;
+.audio__buttons {
+    display: flex;
+    align-items: center;
 }
-.lights_two {
-    top: 350px;
-    left: -175px;
-    transform: rotate(-163deg);
-}
-.lights_three {
-    top: 1280px;
-    right: -200px;
-}
-.lights_four {
-    top: 1700px;
-    left: -175px;
-    transform: rotate(-163deg);
-}
-.lights__line_one {
-    width: 300px;
-    height: 300px;
-    border-radius: 55% 37%;
-    border: 2px solid #292929;
-}
-.lights__line_two {
-    width: 300px;
-    height: 300px;
-    border-radius: 132% 37%;
-    border: 2px solid #292929;
-    transform: rotate(127deg);
-}
-.lights__line_three {
-    width: 384px;
-    height: 250px;
-    border-radius: 102% 37%;
-    border: 2px solid #292929;
-    transform: rotate(111deg);
-}
-.light {
-    position: absolute;
+.audio__icon {
     width: 50px;
     height: 50px;
-    border-radius: 72% 37%;
+    background-image: url(../images/svg/play.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-color: transparent;
+    background-position: center center;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    cursor: pointer;
+    transition: all .3s linear;
 }
-.light_zero {
-    top: -9px;
-    left: 18px;
-    transform: rotate(77deg);
+.pause {
+    background-image: url(../images/svg/pause.svg);
 }
-.light_one {
-    top: 38px;
-    left: -23px;
-    transform: rotate(51deg);
+.audio__icon:hover {
+    transform: scale(0.95);
 }
-.light_two {
-    top: 102px;
-    left: -49px;
-    transform: rotate(50deg);
-}
-.light_three {
-    top: 159px;
-    left: -52px;
-    transform: rotate(46deg);
-}
-.light_four {
-    top: 222px;
-    left: -40px;
-    transform: rotate(30deg);
-}
-.light_five {
-    top: 269px;
-    left: -4px;
-    transform: rotate(12deg);
-}
-.light_six {
-    top: 298px;
-    left: 49px;
-    transform: rotate(-15deg);
-}
-.light_seven {
-    top: 303px;
-    left: 113px;
-    transform: rotate(-48deg);
-}
-.light_eight {
-    top: -35px;
-    left: 28px;
-    transform: rotate(88deg);
-}
-.light_nine {
-    top: 22px;
-    left: 0;
-    transform: rotate(51deg);
-}
-.light_twelve {
-    top: 84px;
-    left: -20px;
-    transform: rotate(50deg);
-}
-.light_thirteen {
-    top: 146px;
-    left: -18px;
-    transform: rotate(41deg);
-}
-.light_fourteen {
-    top: 207px;
-    left: -2px;
-    transform: rotate(30deg);
-}
-.light_fiveteen {
-    top: 267px;
-    left: 32px;
-    transform: rotate(12deg);
-}
-.light_sixteen {
-    top: 316px;
-    left: 82px;
-    transform: rotate(-9deg);
-}
-.light_seventeen {
-    top: 336px;
-    left: 146px;
-    transform: rotate(-34deg);
-}
-.light_eightteen {
-    top: -64px;
-    left: 68px;
-    transform: rotate(77deg);
-}
-.light_nineteen {
-    top: 5px;
-    left: 44px;
-    transform: rotate(63deg);
-}
-.light_twenty {
-    top: 76px;
-    left: 30px;
-    transform: rotate(50deg);
-}
-.light_twentyone {
-    top: 144px;
-    left: 31px;
-    transform: rotate(46deg);
-}
-.light_twentytwo {
-    top: 207px;
-    left: 43px;
-    transform: rotate(30deg);
-}
-.light_twentythree {
-    top: 266px;
-    left: 68px;
-    transform: rotate(12deg);
-}
-.light_twentyfour {
-    top: 317px;
-    left: 121px;
-    transform: rotate(-15deg);
-}
-.light_twentyfive {
-    top: -116px;
-    left: 118px;
-    transform: rotate(93deg);
-}
-.light_green {
-    background-color: rgba(25,196,51,1);
-    box-shadow: 0px 0px 50px 10px rgba(25,196,51,1);
-}
-.light_yellow {
-    background-color: rgba(230,227,30,1);
-    box-shadow: 0px 0px 50px 10px rgba(230,227,30,1);
-}
-.light_blue {
-    background-color: rgba(28,95,230,1);
-    box-shadow: 0px 0px 50px 10px rgba(28,95,230,1);
-}
-.light_orange {
-    background-color: rgba(231,166,26,1);
-    box-shadow: 0px 0px 50px 10px rgba(231,166,26,1);
-}
-.light_red {
-    background-color: rgba(230,62,32,1);
-    box-shadow: 0px 0px 50px 10px rgba(230,62,32,1);
-}
-/* Lights styles end */
+/* Audio styles end */
 
 /* Parallax styles start */
-.scene {
+/* .scene {
     position: absolute;
     max-width: 100%;
     width: 100%;
@@ -451,7 +331,7 @@ body {
     width: 120px;
     top: 1900px;
     right: 120px;
-}
+} */
 /* Parallax styles end */
 
 /* Calentar styles start */
